@@ -27,6 +27,12 @@ namespace mchs_db_viewer_01
 
         private void adminform_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mCHSDataSet.EmergTypeList". При необходимости она может быть перемещена или удалена.
+            this.emergTypeListTableAdapter.Fill(this.mCHSDataSet.EmergTypeList);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mCHSDataSet.PositionList". При необходимости она может быть перемещена или удалена.
+            this.positionListTableAdapter.Fill(this.mCHSDataSet.PositionList);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mCHSDataSet.StatusList". При необходимости она может быть перемещена или удалена.
+            this.statusListTableAdapter.Fill(this.mCHSDataSet.StatusList);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "mCHSDataSet.Regions". При необходимости она может быть перемещена или удалена.
             this.regionsTableAdapter.Fill(this.mCHSDataSet.Regions);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "mCHSDataSet.UserData". При необходимости она может быть перемещена или удалена.
