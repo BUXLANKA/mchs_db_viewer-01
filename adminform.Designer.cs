@@ -65,7 +65,6 @@
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.phoneTextBox = new System.Windows.Forms.TextBox();
-            this.positionIDTextBox = new System.Windows.Forms.TextBox();
             this.lastnameTextBox = new System.Windows.Forms.TextBox();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.firstnameTextBox = new System.Windows.Forms.TextBox();
@@ -93,13 +92,10 @@
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.statusIDTextBox = new System.Windows.Forms.TextBox();
             this.userIDTextBox = new System.Windows.Forms.TextBox();
-            this.regIDTextBox = new System.Windows.Forms.TextBox();
             this.endDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.startDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
-            this.emTypeIDTextBox = new System.Windows.Forms.TextBox();
             this.emergenciesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -199,6 +195,16 @@
             this.toolStripButton41 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton42 = new System.Windows.Forms.ToolStripButton();
+            this.emergenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.emergenciesComboBox = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.regionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.emergTypeListBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.statusListBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.userDataTableViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userDataTableViewComboBox = new System.Windows.Forms.ComboBox();
+            this.positionListBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             passwordLabel = new System.Windows.Forms.Label();
             loginLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
@@ -251,6 +257,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.statusListDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).BeginInit();
             this.bindingNavigator6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusListBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDataTableViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionListBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // emergenciesBindingSource
@@ -323,13 +335,13 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.userDataTableViewComboBox);
             this.tabPage2.Controls.Add(this.bindingNavigator2);
             this.tabPage2.Controls.Add(this.userDataDataGridView);
             this.tabPage2.Controls.Add(firstnameLabel);
             this.tabPage2.Controls.Add(this.firstnameTextBox);
             this.tabPage2.Controls.Add(this.surnameTextBox);
             this.tabPage2.Controls.Add(this.lastnameTextBox);
-            this.tabPage2.Controls.Add(this.positionIDTextBox);
             this.tabPage2.Controls.Add(this.phoneTextBox);
             this.tabPage2.Controls.Add(this.emailTextBox);
             this.tabPage2.Controls.Add(this.loginTextBox);
@@ -413,26 +425,18 @@
             phoneLabel.AutoSize = true;
             phoneLabel.Location = new System.Drawing.Point(6, 161);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(41, 13);
+            phoneLabel.Size = new System.Drawing.Size(55, 13);
             phoneLabel.TabIndex = 10;
-            phoneLabel.Text = "Phone:";
-            // 
-            // positionIDTextBox
-            // 
-            this.positionIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "PositionID", true));
-            this.positionIDTextBox.Location = new System.Drawing.Point(73, 132);
-            this.positionIDTextBox.Name = "positionIDTextBox";
-            this.positionIDTextBox.Size = new System.Drawing.Size(356, 20);
-            this.positionIDTextBox.TabIndex = 9;
+            phoneLabel.Text = "Телефон:";
             // 
             // positionIDLabel
             // 
             positionIDLabel.AutoSize = true;
             positionIDLabel.Location = new System.Drawing.Point(6, 135);
             positionIDLabel.Name = "positionIDLabel";
-            positionIDLabel.Size = new System.Drawing.Size(61, 13);
+            positionIDLabel.Size = new System.Drawing.Size(68, 13);
             positionIDLabel.TabIndex = 8;
-            positionIDLabel.Text = "Position ID:";
+            positionIDLabel.Text = "Должность:";
             // 
             // lastnameTextBox
             // 
@@ -447,9 +451,9 @@
             lastnameLabel.AutoSize = true;
             lastnameLabel.Location = new System.Drawing.Point(6, 109);
             lastnameLabel.Name = "lastnameLabel";
-            lastnameLabel.Size = new System.Drawing.Size(56, 13);
+            lastnameLabel.Size = new System.Drawing.Size(57, 13);
             lastnameLabel.TabIndex = 6;
-            lastnameLabel.Text = "Lastname:";
+            lastnameLabel.Text = "Отчество:";
             // 
             // surnameTextBox
             // 
@@ -464,9 +468,9 @@
             surnameLabel.AutoSize = true;
             surnameLabel.Location = new System.Drawing.Point(6, 83);
             surnameLabel.Name = "surnameLabel";
-            surnameLabel.Size = new System.Drawing.Size(52, 13);
+            surnameLabel.Size = new System.Drawing.Size(59, 13);
             surnameLabel.TabIndex = 4;
-            surnameLabel.Text = "Surname:";
+            surnameLabel.Text = "Фамилия:";
             // 
             // firstnameTextBox
             // 
@@ -481,9 +485,9 @@
             firstnameLabel.AutoSize = true;
             firstnameLabel.Location = new System.Drawing.Point(6, 57);
             firstnameLabel.Name = "firstnameLabel";
-            firstnameLabel.Size = new System.Drawing.Size(55, 13);
+            firstnameLabel.Size = new System.Drawing.Size(32, 13);
             firstnameLabel.TabIndex = 2;
-            firstnameLabel.Text = "Firstname:";
+            firstnameLabel.Text = "Имя:";
             // 
             // userDataDataGridView
             // 
@@ -689,14 +693,14 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.comboBox2);
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.emergenciesComboBox);
             this.tabPage1.Controls.Add(this.bindingNavigator1);
             this.tabPage1.Controls.Add(this.emergenciesDataGridView);
             this.tabPage1.Controls.Add(emTypeIDLabel);
-            this.tabPage1.Controls.Add(this.emTypeIDTextBox);
             this.tabPage1.Controls.Add(this.descriptionTextBox);
-            this.tabPage1.Controls.Add(this.regIDTextBox);
             this.tabPage1.Controls.Add(this.userIDTextBox);
-            this.tabPage1.Controls.Add(this.statusIDTextBox);
             this.tabPage1.Controls.Add(descriptionLabel);
             this.tabPage1.Controls.Add(startDateLabel);
             this.tabPage1.Controls.Add(this.startDateDateTimePicker);
@@ -713,29 +717,21 @@
             this.tabPage1.Text = "Таблица ЧС";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // statusIDTextBox
-            // 
-            this.statusIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "StatusID", true));
-            this.statusIDTextBox.Location = new System.Drawing.Point(89, 214);
-            this.statusIDTextBox.Name = "statusIDTextBox";
-            this.statusIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.statusIDTextBox.TabIndex = 15;
-            // 
             // statusIDLabel
             // 
             statusIDLabel.AutoSize = true;
             statusIDLabel.Location = new System.Drawing.Point(6, 217);
             statusIDLabel.Name = "statusIDLabel";
-            statusIDLabel.Size = new System.Drawing.Size(54, 13);
+            statusIDLabel.Size = new System.Drawing.Size(44, 13);
             statusIDLabel.TabIndex = 14;
-            statusIDLabel.Text = "Status ID:";
+            statusIDLabel.Text = "Статус:";
             // 
             // userIDTextBox
             // 
             this.userIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "UserID", true));
-            this.userIDTextBox.Location = new System.Drawing.Point(89, 188);
+            this.userIDTextBox.Location = new System.Drawing.Point(132, 188);
             this.userIDTextBox.Name = "userIDTextBox";
-            this.userIDTextBox.Size = new System.Drawing.Size(200, 20);
+            this.userIDTextBox.Size = new System.Drawing.Size(371, 20);
             this.userIDTextBox.TabIndex = 13;
             // 
             // userIDLabel
@@ -743,33 +739,25 @@
             userIDLabel.AutoSize = true;
             userIDLabel.Location = new System.Drawing.Point(6, 191);
             userIDLabel.Name = "userIDLabel";
-            userIDLabel.Size = new System.Drawing.Size(46, 13);
+            userIDLabel.Size = new System.Drawing.Size(117, 13);
             userIDLabel.TabIndex = 12;
-            userIDLabel.Text = "User ID:";
-            // 
-            // regIDTextBox
-            // 
-            this.regIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "RegID", true));
-            this.regIDTextBox.Location = new System.Drawing.Point(89, 162);
-            this.regIDTextBox.Name = "regIDTextBox";
-            this.regIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.regIDTextBox.TabIndex = 11;
+            userIDLabel.Text = "№Уполн. сотрудника:";
             // 
             // regIDLabel
             // 
             regIDLabel.AutoSize = true;
             regIDLabel.Location = new System.Drawing.Point(6, 165);
             regIDLabel.Name = "regIDLabel";
-            regIDLabel.Size = new System.Drawing.Size(44, 13);
+            regIDLabel.Size = new System.Drawing.Size(46, 13);
             regIDLabel.TabIndex = 10;
-            regIDLabel.Text = "Reg ID:";
+            regIDLabel.Text = "Регион:";
             // 
             // endDateDateTimePicker
             // 
             this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "EndDate", true));
-            this.endDateDateTimePicker.Location = new System.Drawing.Point(89, 136);
+            this.endDateDateTimePicker.Location = new System.Drawing.Point(132, 136);
             this.endDateDateTimePicker.Name = "endDateDateTimePicker";
-            this.endDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.endDateDateTimePicker.Size = new System.Drawing.Size(371, 20);
             this.endDateDateTimePicker.TabIndex = 9;
             // 
             // endDateLabel
@@ -777,16 +765,16 @@
             endDateLabel.AutoSize = true;
             endDateLabel.Location = new System.Drawing.Point(6, 140);
             endDateLabel.Name = "endDateLabel";
-            endDateLabel.Size = new System.Drawing.Size(55, 13);
+            endDateLabel.Size = new System.Drawing.Size(92, 13);
             endDateLabel.TabIndex = 8;
-            endDateLabel.Text = "End Date:";
+            endDateLabel.Text = "Дата окончания:";
             // 
             // startDateDateTimePicker
             // 
             this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "StartDate", true));
-            this.startDateDateTimePicker.Location = new System.Drawing.Point(89, 110);
+            this.startDateDateTimePicker.Location = new System.Drawing.Point(132, 110);
             this.startDateDateTimePicker.Name = "startDateDateTimePicker";
-            this.startDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.startDateDateTimePicker.Size = new System.Drawing.Size(371, 20);
             this.startDateDateTimePicker.TabIndex = 7;
             // 
             // startDateLabel
@@ -794,16 +782,16 @@
             startDateLabel.AutoSize = true;
             startDateLabel.Location = new System.Drawing.Point(6, 114);
             startDateLabel.Name = "startDateLabel";
-            startDateLabel.Size = new System.Drawing.Size(58, 13);
+            startDateLabel.Size = new System.Drawing.Size(74, 13);
             startDateLabel.TabIndex = 6;
-            startDateLabel.Text = "Start Date:";
+            startDateLabel.Text = "Дата начала:";
             // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(89, 84);
+            this.descriptionTextBox.Location = new System.Drawing.Point(132, 84);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(200, 20);
+            this.descriptionTextBox.Size = new System.Drawing.Size(371, 20);
             this.descriptionTextBox.TabIndex = 5;
             // 
             // descriptionLabel
@@ -811,26 +799,18 @@
             descriptionLabel.AutoSize = true;
             descriptionLabel.Location = new System.Drawing.Point(6, 87);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(63, 13);
+            descriptionLabel.Size = new System.Drawing.Size(60, 13);
             descriptionLabel.TabIndex = 4;
-            descriptionLabel.Text = "Description:";
-            // 
-            // emTypeIDTextBox
-            // 
-            this.emTypeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "EmTypeID", true));
-            this.emTypeIDTextBox.Location = new System.Drawing.Point(89, 58);
-            this.emTypeIDTextBox.Name = "emTypeIDTextBox";
-            this.emTypeIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.emTypeIDTextBox.TabIndex = 3;
+            descriptionLabel.Text = "Описание:";
             // 
             // emTypeIDLabel
             // 
             emTypeIDLabel.AutoSize = true;
             emTypeIDLabel.Location = new System.Drawing.Point(6, 61);
             emTypeIDLabel.Name = "emTypeIDLabel";
-            emTypeIDLabel.Size = new System.Drawing.Size(66, 13);
+            emTypeIDLabel.Size = new System.Drawing.Size(47, 13);
             emTypeIDLabel.TabIndex = 2;
-            emTypeIDLabel.Text = "Em Type ID:";
+            emTypeIDLabel.Text = "Тип ЧС:";
             // 
             // emergenciesDataGridView
             // 
@@ -1784,6 +1764,84 @@
             this.toolStripButton42.Size = new System.Drawing.Size(129, 38);
             this.toolStripButton42.Text = "Сохранить данные";
             // 
+            // emergenciesBindingSource1
+            // 
+            this.emergenciesBindingSource1.DataMember = "Emergencies";
+            this.emergenciesBindingSource1.DataSource = this.mCHSDataSet;
+            // 
+            // emergenciesComboBox
+            // 
+            this.emergenciesComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "RegID", true));
+            this.emergenciesComboBox.DataSource = this.regionsBindingSource1;
+            this.emergenciesComboBox.DisplayMember = "RegName";
+            this.emergenciesComboBox.FormattingEnabled = true;
+            this.emergenciesComboBox.Location = new System.Drawing.Point(132, 162);
+            this.emergenciesComboBox.Name = "emergenciesComboBox";
+            this.emergenciesComboBox.Size = new System.Drawing.Size(371, 21);
+            this.emergenciesComboBox.TabIndex = 16;
+            this.emergenciesComboBox.ValueMember = "RegID";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "EmTypeID", true));
+            this.comboBox1.DataSource = this.emergTypeListBindingSource1;
+            this.comboBox1.DisplayMember = "Typename";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(132, 57);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(371, 21);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.ValueMember = "EmTypeID";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "StatusID", true));
+            this.comboBox2.DataSource = this.statusListBindingSource1;
+            this.comboBox2.DisplayMember = "Statusname";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(132, 214);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(371, 21);
+            this.comboBox2.TabIndex = 18;
+            this.comboBox2.ValueMember = "StatusID";
+            // 
+            // regionsBindingSource1
+            // 
+            this.regionsBindingSource1.DataMember = "Regions";
+            this.regionsBindingSource1.DataSource = this.mCHSDataSet;
+            // 
+            // emergTypeListBindingSource1
+            // 
+            this.emergTypeListBindingSource1.DataMember = "EmergTypeList";
+            this.emergTypeListBindingSource1.DataSource = this.mCHSDataSet;
+            // 
+            // statusListBindingSource1
+            // 
+            this.statusListBindingSource1.DataMember = "StatusList";
+            this.statusListBindingSource1.DataSource = this.mCHSDataSet;
+            // 
+            // userDataTableViewBindingSource
+            // 
+            this.userDataTableViewBindingSource.DataSource = this.mCHSDataSet;
+            this.userDataTableViewBindingSource.Position = 0;
+            // 
+            // userDataTableViewComboBox
+            // 
+            this.userDataTableViewComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.userDataBindingSource, "PositionID", true));
+            this.userDataTableViewComboBox.DataSource = this.positionListBindingSource1;
+            this.userDataTableViewComboBox.DisplayMember = "PositionName";
+            this.userDataTableViewComboBox.FormattingEnabled = true;
+            this.userDataTableViewComboBox.Location = new System.Drawing.Point(73, 132);
+            this.userDataTableViewComboBox.Name = "userDataTableViewComboBox";
+            this.userDataTableViewComboBox.Size = new System.Drawing.Size(356, 21);
+            this.userDataTableViewComboBox.TabIndex = 18;
+            this.userDataTableViewComboBox.ValueMember = "PositionID";
+            // 
+            // positionListBindingSource1
+            // 
+            this.positionListBindingSource1.DataMember = "PositionList";
+            this.positionListBindingSource1.DataSource = this.mCHSDataSet;
+            // 
             // adminform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1838,6 +1896,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).EndInit();
             this.bindingNavigator6.ResumeLayout(false);
             this.bindingNavigator6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusListBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDataTableViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionListBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1881,7 +1945,6 @@
         private System.Windows.Forms.TextBox firstnameTextBox;
         private System.Windows.Forms.TextBox surnameTextBox;
         private System.Windows.Forms.TextBox lastnameTextBox;
-        private System.Windows.Forms.TextBox positionIDTextBox;
         private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox loginTextBox;
@@ -1909,11 +1972,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.TextBox emTypeIDTextBox;
         private System.Windows.Forms.TextBox descriptionTextBox;
-        private System.Windows.Forms.TextBox regIDTextBox;
         private System.Windows.Forms.TextBox userIDTextBox;
-        private System.Windows.Forms.TextBox statusIDTextBox;
         private System.Windows.Forms.DateTimePicker startDateDateTimePicker;
         private System.Windows.Forms.DateTimePicker endDateDateTimePicker;
         private System.Windows.Forms.TabControl tabControl1;
@@ -1993,5 +2053,15 @@
         private System.Windows.Forms.DataGridView statusListDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.BindingSource statusListBindingSource1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource emergTypeListBindingSource1;
+        private System.Windows.Forms.ComboBox emergenciesComboBox;
+        private System.Windows.Forms.BindingSource regionsBindingSource1;
+        private System.Windows.Forms.BindingSource emergenciesBindingSource1;
+        private System.Windows.Forms.ComboBox userDataTableViewComboBox;
+        private System.Windows.Forms.BindingSource positionListBindingSource1;
+        private System.Windows.Forms.BindingSource userDataTableViewBindingSource;
     }
 }
