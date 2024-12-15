@@ -16,7 +16,7 @@ namespace mchs_db_viewer_01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminform());
+            Application.Run(new operatorform());
         }
     }
 }

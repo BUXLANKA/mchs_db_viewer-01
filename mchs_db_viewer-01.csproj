@@ -63,6 +63,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MCHSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="operatorform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operatorform.Designer.cs">
+      <DependentUpon>operatorform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="adminform.resx">
@@ -70,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginform.resx">
       <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operatorform.resx">
+      <DependentUpon>operatorform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
