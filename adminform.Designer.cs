@@ -37,7 +37,6 @@
             System.Windows.Forms.Label lastnameLabel;
             System.Windows.Forms.Label surnameLabel;
             System.Windows.Forms.Label firstnameLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminform));
             System.Windows.Forms.Label statusIDLabel;
             System.Windows.Forms.Label userIDLabel;
             System.Windows.Forms.Label regIDLabel;
@@ -46,8 +45,8 @@
             System.Windows.Forms.Label descriptionLabel;
             System.Windows.Forms.Label emTypeIDLabel;
             System.Windows.Forms.Label positionNameLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminform));
             System.Windows.Forms.Label regNameLabel;
-            System.Windows.Forms.Label typenameLabel;
             this.emergenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mCHSDataSet = new mchs_db_viewer_01.MCHSDataSet();
             this.userDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -128,17 +127,40 @@
             this.positionListDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergTypeListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.emergTypeListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergTypeListTableAdapter();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bindingNavigator3 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripButton15 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton16 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton17 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton18 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton20 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bindingNavigator4 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripButton22 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton23 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton24 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton25 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox4 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton26 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton27 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton28 = new System.Windows.Forms.ToolStripButton();
             this.regNameTextBox = new System.Windows.Forms.TextBox();
             this.regionsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emergTypeListBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.emergTypeListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergTypeListTableAdapter();
-            this.emergTypeListDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typenameTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             passwordLabel = new System.Windows.Forms.Label();
             loginLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
@@ -156,7 +178,6 @@
             emTypeIDLabel = new System.Windows.Forms.Label();
             positionNameLabel = new System.Windows.Forms.Label();
             regNameLabel = new System.Windows.Forms.Label();
-            typenameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mCHSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDataBindingSource)).BeginInit();
@@ -174,10 +195,14 @@
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.positionListBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.positionListDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.regionsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
+            this.bindingNavigator3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).BeginInit();
+            this.bindingNavigator4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // emergenciesBindingSource
@@ -235,13 +260,8 @@
             // tabPage4
             // 
             this.tabPage4.AutoScroll = true;
+            this.tabPage4.Controls.Add(this.groupBox2);
             this.tabPage4.Controls.Add(this.groupBox1);
-            this.tabPage4.Controls.Add(typenameLabel);
-            this.tabPage4.Controls.Add(this.typenameTextBox);
-            this.tabPage4.Controls.Add(this.emergTypeListDataGridView);
-            this.tabPage4.Controls.Add(this.regionsDataGridView);
-            this.tabPage4.Controls.Add(regNameLabel);
-            this.tabPage4.Controls.Add(this.regNameTextBox);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -513,7 +533,7 @@
             this.toolStripButton8,
             this.toolStripButton9,
             this.toolStripButton14});
-            this.bindingNavigator2.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigator2.Location = new System.Drawing.Point(1, 0);
             this.bindingNavigator2.MoveFirstItem = this.toolStripButton10;
             this.bindingNavigator2.MoveLastItem = this.toolStripButton13;
             this.bindingNavigator2.MoveNextItem = this.toolStripButton12;
@@ -980,7 +1000,7 @@
             // positionNameLabel
             // 
             positionNameLabel.AutoSize = true;
-            positionNameLabel.Location = new System.Drawing.Point(12, 36);
+            positionNameLabel.Location = new System.Drawing.Point(6, 80);
             positionNameLabel.Name = "positionNameLabel";
             positionNameLabel.Size = new System.Drawing.Size(78, 13);
             positionNameLabel.TabIndex = 2;
@@ -989,7 +1009,7 @@
             // positionNameTextBox
             // 
             this.positionNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.positionListBindingSource, "PositionName", true));
-            this.positionNameTextBox.Location = new System.Drawing.Point(96, 33);
+            this.positionNameTextBox.Location = new System.Drawing.Point(90, 77);
             this.positionNameTextBox.Name = "positionNameTextBox";
             this.positionNameTextBox.Size = new System.Drawing.Size(219, 20);
             this.positionNameTextBox.TabIndex = 3;
@@ -1002,9 +1022,9 @@
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19});
             this.positionListDataGridView.DataSource = this.positionListBindingSource;
-            this.positionListDataGridView.Location = new System.Drawing.Point(15, 72);
+            this.positionListDataGridView.Location = new System.Drawing.Point(9, 124);
             this.positionListDataGridView.Name = "positionListDataGridView";
-            this.positionListDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.positionListDataGridView.Size = new System.Drawing.Size(1010, 260);
             this.positionListDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn18
@@ -1020,22 +1040,309 @@
             this.dataGridViewTextBoxColumn19.HeaderText = "PositionName";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             // 
+            // emergTypeListBindingSource
+            // 
+            this.emergTypeListBindingSource.DataMember = "EmergTypeList";
+            this.emergTypeListBindingSource.DataSource = this.mCHSDataSet;
+            // 
+            // emergTypeListTableAdapter
+            // 
+            this.emergTypeListTableAdapter.ClearBeforeFill = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.bindingNavigator3);
+            this.groupBox1.Controls.Add(this.positionNameTextBox);
+            this.groupBox1.Controls.Add(positionNameLabel);
+            this.groupBox1.Controls.Add(this.positionListDataGridView);
+            this.groupBox1.Location = new System.Drawing.Point(20, 24);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1025, 390);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Таблица должностей";
+            // 
+            // bindingNavigator3
+            // 
+            this.bindingNavigator3.AddNewItem = this.toolStripButton15;
+            this.bindingNavigator3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bindingNavigator3.AutoSize = false;
+            this.bindingNavigator3.BindingSource = this.positionListBindingSource;
+            this.bindingNavigator3.CanOverflow = false;
+            this.bindingNavigator3.CountItem = this.toolStripLabel3;
+            this.bindingNavigator3.DeleteItem = this.toolStripButton16;
+            this.bindingNavigator3.Dock = System.Windows.Forms.DockStyle.None;
+            this.bindingNavigator3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton17,
+            this.toolStripButton18,
+            this.toolStripSeparator7,
+            this.toolStripTextBox3,
+            this.toolStripLabel3,
+            this.toolStripSeparator8,
+            this.toolStripButton19,
+            this.toolStripButton20,
+            this.toolStripSeparator9,
+            this.toolStripButton15,
+            this.toolStripButton16,
+            this.toolStripButton21});
+            this.bindingNavigator3.Location = new System.Drawing.Point(0, 16);
+            this.bindingNavigator3.MoveFirstItem = this.toolStripButton17;
+            this.bindingNavigator3.MoveLastItem = this.toolStripButton20;
+            this.bindingNavigator3.MoveNextItem = this.toolStripButton19;
+            this.bindingNavigator3.MovePreviousItem = this.toolStripButton18;
+            this.bindingNavigator3.Name = "bindingNavigator3";
+            this.bindingNavigator3.PositionItem = this.toolStripTextBox3;
+            this.bindingNavigator3.Size = new System.Drawing.Size(1025, 41);
+            this.bindingNavigator3.TabIndex = 19;
+            this.bindingNavigator3.Text = "bindingNavigator3";
+            // 
+            // toolStripButton15
+            // 
+            this.toolStripButton15.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton15.Image")));
+            this.toolStripButton15.Name = "toolStripButton15";
+            this.toolStripButton15.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton15.Size = new System.Drawing.Size(79, 38);
+            this.toolStripButton15.Text = "Добавить";
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(43, 38);
+            this.toolStripLabel3.Text = "для {0}";
+            this.toolStripLabel3.ToolTipText = "Общее число элементов";
+            // 
+            // toolStripButton16
+            // 
+            this.toolStripButton16.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton16.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton16.Image")));
+            this.toolStripButton16.Name = "toolStripButton16";
+            this.toolStripButton16.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton16.Size = new System.Drawing.Size(71, 38);
+            this.toolStripButton16.Text = "Удалить";
+            // 
+            // toolStripButton17
+            // 
+            this.toolStripButton17.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton17.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton17.Image")));
+            this.toolStripButton17.Name = "toolStripButton17";
+            this.toolStripButton17.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton17.Size = new System.Drawing.Size(23, 38);
+            this.toolStripButton17.Text = "Переместить в начало";
+            // 
+            // toolStripButton18
+            // 
+            this.toolStripButton18.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton18.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton18.Image")));
+            this.toolStripButton18.Name = "toolStripButton18";
+            this.toolStripButton18.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton18.Size = new System.Drawing.Size(23, 38);
+            this.toolStripButton18.Text = "Переместить назад";
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 41);
+            // 
+            // toolStripTextBox3
+            // 
+            this.toolStripTextBox3.AccessibleName = "Положение";
+            this.toolStripTextBox3.AutoSize = false;
+            this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox3.Name = "toolStripTextBox3";
+            this.toolStripTextBox3.Size = new System.Drawing.Size(50, 23);
+            this.toolStripTextBox3.Text = "0";
+            this.toolStripTextBox3.ToolTipText = "Текущее положение";
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 41);
+            // 
+            // toolStripButton19
+            // 
+            this.toolStripButton19.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton19.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton19.Image")));
+            this.toolStripButton19.Name = "toolStripButton19";
+            this.toolStripButton19.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton19.Size = new System.Drawing.Size(23, 38);
+            this.toolStripButton19.Text = "Переместить вперед";
+            // 
+            // toolStripButton20
+            // 
+            this.toolStripButton20.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton20.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton20.Image")));
+            this.toolStripButton20.Name = "toolStripButton20";
+            this.toolStripButton20.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton20.Size = new System.Drawing.Size(23, 38);
+            this.toolStripButton20.Text = "Переместить в конец";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 41);
+            // 
+            // toolStripButton21
+            // 
+            this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
+            this.toolStripButton21.Name = "toolStripButton21";
+            this.toolStripButton21.Size = new System.Drawing.Size(129, 38);
+            this.toolStripButton21.Text = "Сохранить данные";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.regionsDataGridView);
+            this.groupBox2.Controls.Add(regNameLabel);
+            this.groupBox2.Controls.Add(this.regNameTextBox);
+            this.groupBox2.Controls.Add(this.bindingNavigator4);
+            this.groupBox2.Location = new System.Drawing.Point(20, 435);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1025, 470);
+            this.groupBox2.TabIndex = 20;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Таблица регионов";
+            // 
+            // bindingNavigator4
+            // 
+            this.bindingNavigator4.AddNewItem = this.toolStripButton22;
+            this.bindingNavigator4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bindingNavigator4.AutoSize = false;
+            this.bindingNavigator4.BindingSource = this.positionListBindingSource;
+            this.bindingNavigator4.CanOverflow = false;
+            this.bindingNavigator4.CountItem = this.toolStripLabel4;
+            this.bindingNavigator4.DeleteItem = this.toolStripButton23;
+            this.bindingNavigator4.Dock = System.Windows.Forms.DockStyle.None;
+            this.bindingNavigator4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton24,
+            this.toolStripButton25,
+            this.toolStripSeparator10,
+            this.toolStripTextBox4,
+            this.toolStripLabel4,
+            this.toolStripSeparator11,
+            this.toolStripButton26,
+            this.toolStripButton27,
+            this.toolStripSeparator12,
+            this.toolStripButton22,
+            this.toolStripButton23,
+            this.toolStripButton28});
+            this.bindingNavigator4.Location = new System.Drawing.Point(0, 13);
+            this.bindingNavigator4.MoveFirstItem = this.toolStripButton24;
+            this.bindingNavigator4.MoveLastItem = this.toolStripButton27;
+            this.bindingNavigator4.MoveNextItem = this.toolStripButton26;
+            this.bindingNavigator4.MovePreviousItem = this.toolStripButton25;
+            this.bindingNavigator4.Name = "bindingNavigator4";
+            this.bindingNavigator4.PositionItem = this.toolStripTextBox4;
+            this.bindingNavigator4.Size = new System.Drawing.Size(1025, 41);
+            this.bindingNavigator4.TabIndex = 19;
+            this.bindingNavigator4.Text = "bindingNavigator4";
+            // 
+            // toolStripButton22
+            // 
+            this.toolStripButton22.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton22.Image")));
+            this.toolStripButton22.Name = "toolStripButton22";
+            this.toolStripButton22.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton22.Size = new System.Drawing.Size(79, 38);
+            this.toolStripButton22.Text = "Добавить";
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(43, 34);
+            this.toolStripLabel4.Text = "для {0}";
+            this.toolStripLabel4.ToolTipText = "Общее число элементов";
+            // 
+            // toolStripButton23
+            // 
+            this.toolStripButton23.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton23.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton23.Image")));
+            this.toolStripButton23.Name = "toolStripButton23";
+            this.toolStripButton23.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton23.Size = new System.Drawing.Size(71, 34);
+            this.toolStripButton23.Text = "Удалить";
+            // 
+            // toolStripButton24
+            // 
+            this.toolStripButton24.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton24.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton24.Image")));
+            this.toolStripButton24.Name = "toolStripButton24";
+            this.toolStripButton24.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton24.Size = new System.Drawing.Size(23, 34);
+            this.toolStripButton24.Text = "Переместить в начало";
+            // 
+            // toolStripButton25
+            // 
+            this.toolStripButton25.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton25.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton25.Image")));
+            this.toolStripButton25.Name = "toolStripButton25";
+            this.toolStripButton25.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton25.Size = new System.Drawing.Size(23, 34);
+            this.toolStripButton25.Text = "Переместить назад";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 37);
+            // 
+            // toolStripTextBox4
+            // 
+            this.toolStripTextBox4.AccessibleName = "Положение";
+            this.toolStripTextBox4.AutoSize = false;
+            this.toolStripTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox4.Name = "toolStripTextBox4";
+            this.toolStripTextBox4.Size = new System.Drawing.Size(50, 23);
+            this.toolStripTextBox4.Text = "0";
+            this.toolStripTextBox4.ToolTipText = "Текущее положение";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 37);
+            // 
+            // toolStripButton26
+            // 
+            this.toolStripButton26.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton26.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton26.Image")));
+            this.toolStripButton26.Name = "toolStripButton26";
+            this.toolStripButton26.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton26.Size = new System.Drawing.Size(23, 34);
+            this.toolStripButton26.Text = "Переместить вперед";
+            // 
+            // toolStripButton27
+            // 
+            this.toolStripButton27.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton27.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton27.Image")));
+            this.toolStripButton27.Name = "toolStripButton27";
+            this.toolStripButton27.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton27.Size = new System.Drawing.Size(23, 34);
+            this.toolStripButton27.Text = "Переместить в конец";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 37);
+            // 
+            // toolStripButton28
+            // 
+            this.toolStripButton28.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton28.Image")));
+            this.toolStripButton28.Name = "toolStripButton28";
+            this.toolStripButton28.Size = new System.Drawing.Size(129, 34);
+            this.toolStripButton28.Text = "Сохранить данные";
+            // 
             // regNameLabel
             // 
             regNameLabel.AutoSize = true;
-            regNameLabel.Location = new System.Drawing.Point(365, 78);
+            regNameLabel.Location = new System.Drawing.Point(23, 87);
             regNameLabel.Name = "regNameLabel";
             regNameLabel.Size = new System.Drawing.Size(61, 13);
-            regNameLabel.TabIndex = 5;
+            regNameLabel.TabIndex = 21;
             regNameLabel.Text = "Reg Name:";
             // 
             // regNameTextBox
             // 
             this.regNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.regionsBindingSource, "RegName", true));
-            this.regNameTextBox.Location = new System.Drawing.Point(432, 75);
+            this.regNameTextBox.Location = new System.Drawing.Point(90, 84);
             this.regNameTextBox.Name = "regNameTextBox";
-            this.regNameTextBox.Size = new System.Drawing.Size(236, 20);
-            this.regNameTextBox.TabIndex = 6;
+            this.regNameTextBox.Size = new System.Drawing.Size(219, 20);
+            this.regNameTextBox.TabIndex = 22;
             // 
             // regionsDataGridView
             // 
@@ -1045,10 +1352,10 @@
             this.dataGridViewTextBoxColumn20,
             this.dataGridViewTextBoxColumn21});
             this.regionsDataGridView.DataSource = this.regionsBindingSource;
-            this.regionsDataGridView.Location = new System.Drawing.Point(368, 101);
+            this.regionsDataGridView.Location = new System.Drawing.Point(10, 127);
             this.regionsDataGridView.Name = "regionsDataGridView";
-            this.regionsDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.regionsDataGridView.TabIndex = 6;
+            this.regionsDataGridView.Size = new System.Drawing.Size(1009, 337);
+            this.regionsDataGridView.TabIndex = 22;
             // 
             // dataGridViewTextBoxColumn20
             // 
@@ -1062,70 +1369,6 @@
             this.dataGridViewTextBoxColumn21.DataPropertyName = "RegName";
             this.dataGridViewTextBoxColumn21.HeaderText = "RegName";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            // 
-            // emergTypeListBindingSource
-            // 
-            this.emergTypeListBindingSource.DataMember = "EmergTypeList";
-            this.emergTypeListBindingSource.DataSource = this.mCHSDataSet;
-            // 
-            // emergTypeListTableAdapter
-            // 
-            this.emergTypeListTableAdapter.ClearBeforeFill = true;
-            // 
-            // emergTypeListDataGridView
-            // 
-            this.emergTypeListDataGridView.AutoGenerateColumns = false;
-            this.emergTypeListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.emergTypeListDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23});
-            this.emergTypeListDataGridView.DataSource = this.emergTypeListBindingSource;
-            this.emergTypeListDataGridView.Location = new System.Drawing.Point(720, 101);
-            this.emergTypeListDataGridView.Name = "emergTypeListDataGridView";
-            this.emergTypeListDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.emergTypeListDataGridView.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "EmTypeID";
-            this.dataGridViewTextBoxColumn22.HeaderText = "EmTypeID";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "Typename";
-            this.dataGridViewTextBoxColumn23.HeaderText = "Typename";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // typenameLabel
-            // 
-            typenameLabel.AutoSize = true;
-            typenameLabel.Location = new System.Drawing.Point(719, 73);
-            typenameLabel.Name = "typenameLabel";
-            typenameLabel.Size = new System.Drawing.Size(60, 13);
-            typenameLabel.TabIndex = 9;
-            typenameLabel.Text = "Typename:";
-            // 
-            // typenameTextBox
-            // 
-            this.typenameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergTypeListBindingSource, "Typename", true));
-            this.typenameTextBox.Location = new System.Drawing.Point(791, 70);
-            this.typenameTextBox.Name = "typenameTextBox";
-            this.typenameTextBox.Size = new System.Drawing.Size(229, 20);
-            this.typenameTextBox.TabIndex = 10;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.positionNameTextBox);
-            this.groupBox1.Controls.Add(positionNameLabel);
-            this.groupBox1.Controls.Add(this.positionListDataGridView);
-            this.groupBox1.Location = new System.Drawing.Point(20, 24);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(339, 350);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Таблица должностей";
             // 
             // adminform
             // 
@@ -1142,7 +1385,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusListBindingSource)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userDataDataGridView)).EndInit();
@@ -1158,11 +1400,18 @@
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.positionListBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.positionListDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.regionsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
+            this.bindingNavigator3.ResumeLayout(false);
+            this.bindingNavigator3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).EndInit();
+            this.bindingNavigator4.ResumeLayout(false);
+            this.bindingNavigator4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1244,10 +1493,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.BindingSource positionListBindingSource;
         private MCHSDataSetTableAdapters.PositionListTableAdapter positionListTableAdapter;
-        private System.Windows.Forms.DataGridView regionsDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.TextBox regNameTextBox;
         private System.Windows.Forms.DataGridView positionListDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
@@ -1255,9 +1500,36 @@
         private System.Windows.Forms.BindingSource emergTypeListBindingSource;
         private MCHSDataSetTableAdapters.EmergTypeListTableAdapter emergTypeListTableAdapter;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox typenameTextBox;
-        private System.Windows.Forms.DataGridView emergTypeListDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.BindingNavigator bindingNavigator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton15;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripButton toolStripButton16;
+        private System.Windows.Forms.ToolStripButton toolStripButton17;
+        private System.Windows.Forms.ToolStripButton toolStripButton18;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripButton toolStripButton19;
+        private System.Windows.Forms.ToolStripButton toolStripButton20;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripButton toolStripButton21;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView regionsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.TextBox regNameTextBox;
+        private System.Windows.Forms.BindingNavigator bindingNavigator4;
+        private System.Windows.Forms.ToolStripButton toolStripButton22;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripButton toolStripButton23;
+        private System.Windows.Forms.ToolStripButton toolStripButton24;
+        private System.Windows.Forms.ToolStripButton toolStripButton25;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripButton toolStripButton26;
+        private System.Windows.Forms.ToolStripButton toolStripButton27;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripButton toolStripButton28;
     }
 }
