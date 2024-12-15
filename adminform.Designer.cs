@@ -114,6 +114,11 @@
             this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.regionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.regionsTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.RegionsTableAdapter();
             emTypeIDLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             startDateLabel = new System.Windows.Forms.Label();
@@ -141,6 +146,7 @@
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // emTypeIDLabel
@@ -282,6 +288,9 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(12, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -894,6 +903,45 @@
             this.toolStripButton14.Size = new System.Drawing.Size(129, 332);
             this.toolStripButton14.Text = "Сохранить данные";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1068, 626);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Регионы";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1068, 626);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Статусы";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1068, 626);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Типы ЧС";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // regionsBindingSource
+            // 
+            this.regionsBindingSource.DataMember = "Regions";
+            this.regionsBindingSource.DataSource = this.mCHSDataSet;
+            // 
+            // regionsTableAdapter
+            // 
+            this.regionsTableAdapter.ClearBeforeFill = true;
+            // 
             // adminform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -919,6 +967,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -994,5 +1043,10 @@
         private System.Windows.Forms.ToolStripButton toolStripButton13;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripButton toolStripButton14;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.BindingSource regionsBindingSource;
+        private MCHSDataSetTableAdapters.RegionsTableAdapter regionsTableAdapter;
     }
 }
