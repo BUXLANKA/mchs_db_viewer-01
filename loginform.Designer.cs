@@ -114,6 +114,7 @@
             this.logInButton.TabIndex = 7;
             this.logInButton.Text = "Войти";
             this.logInButton.UseVisualStyleBackColor = true;
+            this.logInButton.Click += new System.EventHandler(this.logInButton_Click);
             // 
             // loginform
             // 
