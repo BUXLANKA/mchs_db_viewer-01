@@ -9,12 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using mchs_db_viewer_01.DataContol;
 
 namespace mchs_db_viewer_01
 {
     public partial class viewerform : Form
     {
-        string connectionString = @"Data Source=DESKTOP-Q8UCL02\SQLEXPRESS;Initial Catalog=MCHS;Integrated Security=True;TrustServerCertificate=True";
+        DataController db = new DataController();
 
         public viewerform()
         {
@@ -25,12 +26,13 @@ namespace mchs_db_viewer_01
         {
             try
             {
+                string connectionString = db.GetConnectionString();
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
 
                     string query = "SELECT * FROM EmergencyTableView";
-                    string query2 = "SELECT * FROM UserDataTableView";
 
                     using (SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection))
                     {
@@ -41,14 +43,6 @@ namespace mchs_db_viewer_01
                         dataGridView1.DataSource = dataTable;
                     }
 
-                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(query2, connection))
-                    {
-                        DataTable dataTable = new DataTable();
-
-                        dataAdapter.Fill(dataTable);
-
-                        dataGridView2.DataSource = dataTable;
-                    }
                 }
             }
             catch (Exception ex)

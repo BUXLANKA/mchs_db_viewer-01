@@ -8,19 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using mchs_db_viewer_01.DataContol;
 
 namespace mchs_db_viewer_01
 {
     public partial class loginform : Form
     {
+        DataController db = new DataController();
+
         adminform AdminWindow = new adminform();
         operatorform OperatorWindow = new operatorform();
         viewerform ViewerWindow = new viewerform();
-
-
-        int[] ValidFullAccess = { 8, 9, 11, 15, 16};
-        int ValidOperatorAccess = 7;
-
 
         public loginform()
         {
@@ -82,7 +80,7 @@ namespace mchs_db_viewer_01
 
                 if (valid)
                 {
-                    string connectionString = @"Data Source=DESKTOP-Q8UCL02\SQLEXPRESS;Initial Catalog=MCHS;Integrated Security=True;TrustServerCertificate=True";
+                    string connectionString = db.GetConnectionString();
 
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
