@@ -101,6 +101,19 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
             emTypeIDLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             startDateLabel = new System.Windows.Forms.Label();
@@ -126,12 +139,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.userDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
+            this.bindingNavigator2.SuspendLayout();
             this.SuspendLayout();
             // 
             // emTypeIDLabel
             // 
             emTypeIDLabel.AutoSize = true;
-            emTypeIDLabel.Location = new System.Drawing.Point(23, 247);
+            emTypeIDLabel.Location = new System.Drawing.Point(6, 61);
             emTypeIDLabel.Name = "emTypeIDLabel";
             emTypeIDLabel.Size = new System.Drawing.Size(66, 13);
             emTypeIDLabel.TabIndex = 2;
@@ -140,7 +155,7 @@
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(23, 273);
+            descriptionLabel.Location = new System.Drawing.Point(6, 87);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(63, 13);
             descriptionLabel.TabIndex = 4;
@@ -149,7 +164,7 @@
             // startDateLabel
             // 
             startDateLabel.AutoSize = true;
-            startDateLabel.Location = new System.Drawing.Point(23, 300);
+            startDateLabel.Location = new System.Drawing.Point(6, 114);
             startDateLabel.Name = "startDateLabel";
             startDateLabel.Size = new System.Drawing.Size(58, 13);
             startDateLabel.TabIndex = 6;
@@ -158,7 +173,7 @@
             // endDateLabel
             // 
             endDateLabel.AutoSize = true;
-            endDateLabel.Location = new System.Drawing.Point(23, 326);
+            endDateLabel.Location = new System.Drawing.Point(6, 140);
             endDateLabel.Name = "endDateLabel";
             endDateLabel.Size = new System.Drawing.Size(55, 13);
             endDateLabel.TabIndex = 8;
@@ -167,7 +182,7 @@
             // regIDLabel
             // 
             regIDLabel.AutoSize = true;
-            regIDLabel.Location = new System.Drawing.Point(23, 351);
+            regIDLabel.Location = new System.Drawing.Point(6, 165);
             regIDLabel.Name = "regIDLabel";
             regIDLabel.Size = new System.Drawing.Size(44, 13);
             regIDLabel.TabIndex = 10;
@@ -176,7 +191,7 @@
             // userIDLabel
             // 
             userIDLabel.AutoSize = true;
-            userIDLabel.Location = new System.Drawing.Point(23, 377);
+            userIDLabel.Location = new System.Drawing.Point(6, 191);
             userIDLabel.Name = "userIDLabel";
             userIDLabel.Size = new System.Drawing.Size(46, 13);
             userIDLabel.TabIndex = 12;
@@ -185,7 +200,7 @@
             // statusIDLabel
             // 
             statusIDLabel.AutoSize = true;
-            statusIDLabel.Location = new System.Drawing.Point(23, 403);
+            statusIDLabel.Location = new System.Drawing.Point(6, 217);
             statusIDLabel.Name = "statusIDLabel";
             statusIDLabel.Size = new System.Drawing.Size(54, 13);
             statusIDLabel.TabIndex = 14;
@@ -194,7 +209,7 @@
             // firstnameLabel
             // 
             firstnameLabel.AutoSize = true;
-            firstnameLabel.Location = new System.Drawing.Point(6, 15);
+            firstnameLabel.Location = new System.Drawing.Point(6, 57);
             firstnameLabel.Name = "firstnameLabel";
             firstnameLabel.Size = new System.Drawing.Size(55, 13);
             firstnameLabel.TabIndex = 2;
@@ -203,7 +218,7 @@
             // surnameLabel
             // 
             surnameLabel.AutoSize = true;
-            surnameLabel.Location = new System.Drawing.Point(6, 41);
+            surnameLabel.Location = new System.Drawing.Point(6, 83);
             surnameLabel.Name = "surnameLabel";
             surnameLabel.Size = new System.Drawing.Size(52, 13);
             surnameLabel.TabIndex = 4;
@@ -212,7 +227,7 @@
             // lastnameLabel
             // 
             lastnameLabel.AutoSize = true;
-            lastnameLabel.Location = new System.Drawing.Point(6, 67);
+            lastnameLabel.Location = new System.Drawing.Point(6, 109);
             lastnameLabel.Name = "lastnameLabel";
             lastnameLabel.Size = new System.Drawing.Size(56, 13);
             lastnameLabel.TabIndex = 6;
@@ -221,7 +236,7 @@
             // positionIDLabel
             // 
             positionIDLabel.AutoSize = true;
-            positionIDLabel.Location = new System.Drawing.Point(6, 93);
+            positionIDLabel.Location = new System.Drawing.Point(6, 135);
             positionIDLabel.Name = "positionIDLabel";
             positionIDLabel.Size = new System.Drawing.Size(61, 13);
             positionIDLabel.TabIndex = 8;
@@ -230,7 +245,7 @@
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(6, 119);
+            phoneLabel.Location = new System.Drawing.Point(6, 161);
             phoneLabel.Name = "phoneLabel";
             phoneLabel.Size = new System.Drawing.Size(41, 13);
             phoneLabel.TabIndex = 10;
@@ -239,7 +254,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(6, 145);
+            emailLabel.Location = new System.Drawing.Point(6, 187);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 12;
@@ -248,7 +263,7 @@
             // loginLabel
             // 
             loginLabel.AutoSize = true;
-            loginLabel.Location = new System.Drawing.Point(6, 171);
+            loginLabel.Location = new System.Drawing.Point(6, 213);
             loginLabel.Name = "loginLabel";
             loginLabel.Size = new System.Drawing.Size(36, 13);
             loginLabel.TabIndex = 14;
@@ -257,7 +272,7 @@
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(6, 197);
+            passwordLabel.Location = new System.Drawing.Point(6, 239);
             passwordLabel.Name = "passwordLabel";
             passwordLabel.Size = new System.Drawing.Size(56, 13);
             passwordLabel.TabIndex = 16;
@@ -314,9 +329,9 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.emergenciesDataGridView.DataSource = this.emergenciesBindingSource;
-            this.emergenciesDataGridView.Location = new System.Drawing.Point(9, 444);
+            this.emergenciesDataGridView.Location = new System.Drawing.Point(9, 255);
             this.emergenciesDataGridView.Name = "emergenciesDataGridView";
-            this.emergenciesDataGridView.Size = new System.Drawing.Size(1053, 179);
+            this.emergenciesDataGridView.Size = new System.Drawing.Size(1053, 368);
             this.emergenciesDataGridView.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn1
@@ -381,7 +396,7 @@
             // emTypeIDTextBox
             // 
             this.emTypeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "EmTypeID", true));
-            this.emTypeIDTextBox.Location = new System.Drawing.Point(106, 244);
+            this.emTypeIDTextBox.Location = new System.Drawing.Point(89, 58);
             this.emTypeIDTextBox.Name = "emTypeIDTextBox";
             this.emTypeIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.emTypeIDTextBox.TabIndex = 3;
@@ -389,7 +404,7 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(106, 270);
+            this.descriptionTextBox.Location = new System.Drawing.Point(89, 84);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(200, 20);
             this.descriptionTextBox.TabIndex = 5;
@@ -397,7 +412,7 @@
             // startDateDateTimePicker
             // 
             this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "StartDate", true));
-            this.startDateDateTimePicker.Location = new System.Drawing.Point(106, 296);
+            this.startDateDateTimePicker.Location = new System.Drawing.Point(89, 110);
             this.startDateDateTimePicker.Name = "startDateDateTimePicker";
             this.startDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.startDateDateTimePicker.TabIndex = 7;
@@ -405,7 +420,7 @@
             // endDateDateTimePicker
             // 
             this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "EndDate", true));
-            this.endDateDateTimePicker.Location = new System.Drawing.Point(106, 322);
+            this.endDateDateTimePicker.Location = new System.Drawing.Point(89, 136);
             this.endDateDateTimePicker.Name = "endDateDateTimePicker";
             this.endDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.endDateDateTimePicker.TabIndex = 9;
@@ -413,7 +428,7 @@
             // regIDTextBox
             // 
             this.regIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "RegID", true));
-            this.regIDTextBox.Location = new System.Drawing.Point(106, 348);
+            this.regIDTextBox.Location = new System.Drawing.Point(89, 162);
             this.regIDTextBox.Name = "regIDTextBox";
             this.regIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.regIDTextBox.TabIndex = 11;
@@ -421,7 +436,7 @@
             // userIDTextBox
             // 
             this.userIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "UserID", true));
-            this.userIDTextBox.Location = new System.Drawing.Point(106, 374);
+            this.userIDTextBox.Location = new System.Drawing.Point(89, 188);
             this.userIDTextBox.Name = "userIDTextBox";
             this.userIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.userIDTextBox.TabIndex = 13;
@@ -429,7 +444,7 @@
             // statusIDTextBox
             // 
             this.statusIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "StatusID", true));
-            this.statusIDTextBox.Location = new System.Drawing.Point(106, 400);
+            this.statusIDTextBox.Location = new System.Drawing.Point(89, 214);
             this.statusIDTextBox.Name = "statusIDTextBox";
             this.statusIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.statusIDTextBox.TabIndex = 15;
@@ -437,6 +452,7 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.bindingNavigator2);
             this.tabPage2.Controls.Add(this.userDataDataGridView);
             this.tabPage2.Controls.Add(firstnameLabel);
             this.tabPage2.Controls.Add(this.firstnameTextBox);
@@ -477,9 +493,9 @@
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17});
             this.userDataDataGridView.DataSource = this.userDataBindingSource;
-            this.userDataDataGridView.Location = new System.Drawing.Point(9, 220);
+            this.userDataDataGridView.Location = new System.Drawing.Point(9, 274);
             this.userDataDataGridView.Name = "userDataDataGridView";
-            this.userDataDataGridView.Size = new System.Drawing.Size(1053, 400);
+            this.userDataDataGridView.Size = new System.Drawing.Size(1053, 346);
             this.userDataDataGridView.TabIndex = 17;
             // 
             // dataGridViewTextBoxColumn9
@@ -545,65 +561,65 @@
             // firstnameTextBox
             // 
             this.firstnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Firstname", true));
-            this.firstnameTextBox.Location = new System.Drawing.Point(73, 12);
+            this.firstnameTextBox.Location = new System.Drawing.Point(73, 54);
             this.firstnameTextBox.Name = "firstnameTextBox";
-            this.firstnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.firstnameTextBox.Size = new System.Drawing.Size(356, 20);
             this.firstnameTextBox.TabIndex = 3;
             // 
             // surnameTextBox
             // 
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(73, 38);
+            this.surnameTextBox.Location = new System.Drawing.Point(73, 80);
             this.surnameTextBox.Name = "surnameTextBox";
-            this.surnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.surnameTextBox.Size = new System.Drawing.Size(356, 20);
             this.surnameTextBox.TabIndex = 5;
             // 
             // lastnameTextBox
             // 
             this.lastnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Lastname", true));
-            this.lastnameTextBox.Location = new System.Drawing.Point(73, 64);
+            this.lastnameTextBox.Location = new System.Drawing.Point(73, 106);
             this.lastnameTextBox.Name = "lastnameTextBox";
-            this.lastnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.lastnameTextBox.Size = new System.Drawing.Size(356, 20);
             this.lastnameTextBox.TabIndex = 7;
             // 
             // positionIDTextBox
             // 
             this.positionIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "PositionID", true));
-            this.positionIDTextBox.Location = new System.Drawing.Point(73, 90);
+            this.positionIDTextBox.Location = new System.Drawing.Point(73, 132);
             this.positionIDTextBox.Name = "positionIDTextBox";
-            this.positionIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.positionIDTextBox.Size = new System.Drawing.Size(356, 20);
             this.positionIDTextBox.TabIndex = 9;
             // 
             // phoneTextBox
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(73, 116);
+            this.phoneTextBox.Location = new System.Drawing.Point(73, 158);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(100, 20);
+            this.phoneTextBox.Size = new System.Drawing.Size(356, 20);
             this.phoneTextBox.TabIndex = 11;
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(73, 142);
+            this.emailTextBox.Location = new System.Drawing.Point(73, 184);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.emailTextBox.Size = new System.Drawing.Size(356, 20);
             this.emailTextBox.TabIndex = 13;
             // 
             // loginTextBox
             // 
             this.loginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Login", true));
-            this.loginTextBox.Location = new System.Drawing.Point(73, 168);
+            this.loginTextBox.Location = new System.Drawing.Point(73, 210);
             this.loginTextBox.Name = "loginTextBox";
-            this.loginTextBox.Size = new System.Drawing.Size(100, 20);
+            this.loginTextBox.Size = new System.Drawing.Size(356, 20);
             this.loginTextBox.TabIndex = 15;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userDataBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(73, 194);
+            this.passwordTextBox.Location = new System.Drawing.Point(73, 236);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(356, 20);
             this.passwordTextBox.TabIndex = 17;
             // 
             // emergenciesTableAdapter
@@ -752,6 +768,132 @@
             this.toolStripButton7.Text = "Сохранить данные";
             this.toolStripButton7.Click += new System.EventHandler(this.emergenciesBindingNavigatorSaveItem_Click);
             // 
+            // bindingNavigator2
+            // 
+            this.bindingNavigator2.AddNewItem = this.toolStripButton8;
+            this.bindingNavigator2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bindingNavigator2.AutoSize = false;
+            this.bindingNavigator2.BindingSource = this.userDataBindingSource;
+            this.bindingNavigator2.CanOverflow = false;
+            this.bindingNavigator2.CountItem = this.toolStripLabel2;
+            this.bindingNavigator2.DeleteItem = this.toolStripButton9;
+            this.bindingNavigator2.Dock = System.Windows.Forms.DockStyle.None;
+            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton10,
+            this.toolStripButton11,
+            this.toolStripSeparator4,
+            this.toolStripTextBox2,
+            this.toolStripLabel2,
+            this.toolStripSeparator5,
+            this.toolStripButton12,
+            this.toolStripButton13,
+            this.toolStripSeparator6,
+            this.toolStripButton8,
+            this.toolStripButton9,
+            this.toolStripButton14});
+            this.bindingNavigator2.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigator2.MoveFirstItem = this.toolStripButton10;
+            this.bindingNavigator2.MoveLastItem = this.toolStripButton13;
+            this.bindingNavigator2.MoveNextItem = this.toolStripButton12;
+            this.bindingNavigator2.MovePreviousItem = this.toolStripButton11;
+            this.bindingNavigator2.Name = "bindingNavigator2";
+            this.bindingNavigator2.PositionItem = this.toolStripTextBox2;
+            this.bindingNavigator2.Size = new System.Drawing.Size(1068, 44);
+            this.bindingNavigator2.TabIndex = 18;
+            this.bindingNavigator2.Text = "bindingNavigator2";
+            // 
+            // toolStripButton8
+            // 
+            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
+            this.toolStripButton8.Name = "toolStripButton8";
+            this.toolStripButton8.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton8.Size = new System.Drawing.Size(79, 332);
+            this.toolStripButton8.Text = "Добавить";
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(43, 332);
+            this.toolStripLabel2.Text = "для {0}";
+            this.toolStripLabel2.ToolTipText = "Общее число элементов";
+            // 
+            // toolStripButton9
+            // 
+            this.toolStripButton9.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
+            this.toolStripButton9.Name = "toolStripButton9";
+            this.toolStripButton9.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton9.Size = new System.Drawing.Size(71, 332);
+            this.toolStripButton9.Text = "Удалить";
+            // 
+            // toolStripButton10
+            // 
+            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton10.Size = new System.Drawing.Size(23, 332);
+            this.toolStripButton10.Text = "Переместить в начало";
+            // 
+            // toolStripButton11
+            // 
+            this.toolStripButton11.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton11.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton11.Image")));
+            this.toolStripButton11.Name = "toolStripButton11";
+            this.toolStripButton11.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton11.Size = new System.Drawing.Size(23, 332);
+            this.toolStripButton11.Text = "Переместить назад";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 335);
+            // 
+            // toolStripTextBox2
+            // 
+            this.toolStripTextBox2.AccessibleName = "Положение";
+            this.toolStripTextBox2.AutoSize = false;
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            this.toolStripTextBox2.Size = new System.Drawing.Size(50, 23);
+            this.toolStripTextBox2.Text = "0";
+            this.toolStripTextBox2.ToolTipText = "Текущее положение";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 335);
+            // 
+            // toolStripButton12
+            // 
+            this.toolStripButton12.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton12.Image")));
+            this.toolStripButton12.Name = "toolStripButton12";
+            this.toolStripButton12.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton12.Size = new System.Drawing.Size(23, 332);
+            this.toolStripButton12.Text = "Переместить вперед";
+            // 
+            // toolStripButton13
+            // 
+            this.toolStripButton13.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton13.Image")));
+            this.toolStripButton13.Name = "toolStripButton13";
+            this.toolStripButton13.RightToLeftAutoMirrorImage = true;
+            this.toolStripButton13.Size = new System.Drawing.Size(23, 332);
+            this.toolStripButton13.Text = "Переместить в конец";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 335);
+            // 
+            // toolStripButton14
+            // 
+            this.toolStripButton14.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton14.Image")));
+            this.toolStripButton14.Name = "toolStripButton14";
+            this.toolStripButton14.Size = new System.Drawing.Size(129, 332);
+            this.toolStripButton14.Text = "Сохранить данные";
+            // 
             // adminform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -774,6 +916,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
+            this.bindingNavigator2.ResumeLayout(false);
+            this.bindingNavigator2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -836,5 +981,18 @@
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
+        private System.Windows.Forms.BindingNavigator bindingNavigator2;
+        private System.Windows.Forms.ToolStripButton toolStripButton8;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.ToolStripButton toolStripButton10;
+        private System.Windows.Forms.ToolStripButton toolStripButton11;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton toolStripButton12;
+        private System.Windows.Forms.ToolStripButton toolStripButton13;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton toolStripButton14;
     }
 }
