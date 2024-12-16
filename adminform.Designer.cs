@@ -73,7 +73,7 @@
             this.toolStripButton40 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton41 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton42 = new System.Windows.Forms.ToolStripButton();
+            this.StatusListSaveButton = new System.Windows.Forms.ToolStripButton();
             this.statusnameTextBox = new System.Windows.Forms.TextBox();
             this.statusListDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,7 +92,7 @@
             this.toolStripButton33 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton34 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton35 = new System.Windows.Forms.ToolStripButton();
+            this.EmTypeSaveButton = new System.Windows.Forms.ToolStripButton();
             this.typenameTextBox = new System.Windows.Forms.TextBox();
             this.emergTypeListDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -111,7 +111,7 @@
             this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton20 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
+            this.PositionTableSaveButton = new System.Windows.Forms.ToolStripButton();
             this.positionNameTextBox = new System.Windows.Forms.TextBox();
             this.positionListDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -129,7 +129,7 @@
             this.toolStripButton26 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton27 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton28 = new System.Windows.Forms.ToolStripButton();
+            this.RegioListSaveButton = new System.Windows.Forms.ToolStripButton();
             this.regNameTextBox = new System.Windows.Forms.TextBox();
             this.regionsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -149,7 +149,7 @@
             this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
+            this.UserDataSaveButton = new System.Windows.Forms.ToolStripButton();
             this.userDataDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -186,7 +186,7 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.EmSaveButton = new System.Windows.Forms.ToolStripButton();
             this.emergenciesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -196,6 +196,7 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergenciesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.userIDTextBox = new System.Windows.Forms.TextBox();
             this.startDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -205,7 +206,6 @@
             this.emergTypeListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergTypeListTableAdapter();
             this.emergenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.userDataTableViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.emergenciesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             passwordLabel = new System.Windows.Forms.Label();
             loginLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
@@ -261,10 +261,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource2)).BeginInit();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDataTableViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // passwordLabel
@@ -540,7 +540,7 @@
             this.toolStripSeparator18,
             this.toolStripButton36,
             this.toolStripButton37,
-            this.toolStripButton42});
+            this.StatusListSaveButton});
             this.bindingNavigator6.Location = new System.Drawing.Point(7, 16);
             this.bindingNavigator6.MoveFirstItem = this.toolStripButton38;
             this.bindingNavigator6.MoveLastItem = this.toolStripButton41;
@@ -637,12 +637,13 @@
             this.toolStripSeparator18.Name = "toolStripSeparator18";
             this.toolStripSeparator18.Size = new System.Drawing.Size(6, 41);
             // 
-            // toolStripButton42
+            // StatusListSaveButton
             // 
-            this.toolStripButton42.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton42.Image")));
-            this.toolStripButton42.Name = "toolStripButton42";
-            this.toolStripButton42.Size = new System.Drawing.Size(129, 38);
-            this.toolStripButton42.Text = "Сохранить данные";
+            this.StatusListSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("StatusListSaveButton.Image")));
+            this.StatusListSaveButton.Name = "StatusListSaveButton";
+            this.StatusListSaveButton.Size = new System.Drawing.Size(129, 38);
+            this.StatusListSaveButton.Text = "Сохранить данные";
+            this.StatusListSaveButton.Click += new System.EventHandler(this.StatusListSaveButton_Click);
             // 
             // statusnameTextBox
             // 
@@ -713,7 +714,7 @@
             this.toolStripSeparator15,
             this.toolStripButton29,
             this.toolStripButton30,
-            this.toolStripButton35});
+            this.EmTypeSaveButton});
             this.bindingNavigator5.Location = new System.Drawing.Point(0, 29);
             this.bindingNavigator5.MoveFirstItem = this.toolStripButton31;
             this.bindingNavigator5.MoveLastItem = this.toolStripButton34;
@@ -815,12 +816,13 @@
             this.toolStripSeparator15.Name = "toolStripSeparator15";
             this.toolStripSeparator15.Size = new System.Drawing.Size(6, 41);
             // 
-            // toolStripButton35
+            // EmTypeSaveButton
             // 
-            this.toolStripButton35.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton35.Image")));
-            this.toolStripButton35.Name = "toolStripButton35";
-            this.toolStripButton35.Size = new System.Drawing.Size(129, 38);
-            this.toolStripButton35.Text = "Сохранить данные";
+            this.EmTypeSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("EmTypeSaveButton.Image")));
+            this.EmTypeSaveButton.Name = "EmTypeSaveButton";
+            this.EmTypeSaveButton.Size = new System.Drawing.Size(129, 38);
+            this.EmTypeSaveButton.Text = "Сохранить данные";
+            this.EmTypeSaveButton.Click += new System.EventHandler(this.EmTypeSaveButton_Click);
             // 
             // typenameTextBox
             // 
@@ -891,7 +893,7 @@
             this.toolStripSeparator9,
             this.toolStripButton15,
             this.toolStripButton16,
-            this.toolStripButton21});
+            this.PositionTableSaveButton});
             this.bindingNavigator3.Location = new System.Drawing.Point(0, 16);
             this.bindingNavigator3.MoveFirstItem = this.toolStripButton17;
             this.bindingNavigator3.MoveLastItem = this.toolStripButton20;
@@ -993,12 +995,13 @@
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 41);
             // 
-            // toolStripButton21
+            // PositionTableSaveButton
             // 
-            this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
-            this.toolStripButton21.Name = "toolStripButton21";
-            this.toolStripButton21.Size = new System.Drawing.Size(129, 38);
-            this.toolStripButton21.Text = "Сохранить данные";
+            this.PositionTableSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("PositionTableSaveButton.Image")));
+            this.PositionTableSaveButton.Name = "PositionTableSaveButton";
+            this.PositionTableSaveButton.Size = new System.Drawing.Size(129, 38);
+            this.PositionTableSaveButton.Text = "Сохранить данные";
+            this.PositionTableSaveButton.Click += new System.EventHandler(this.PositionTableSaveButton_Click);
             // 
             // positionNameTextBox
             // 
@@ -1069,7 +1072,7 @@
             this.toolStripSeparator12,
             this.toolStripButton22,
             this.toolStripButton23,
-            this.toolStripButton28});
+            this.RegioListSaveButton});
             this.bindingNavigator4.Location = new System.Drawing.Point(10, 23);
             this.bindingNavigator4.MoveFirstItem = this.toolStripButton24;
             this.bindingNavigator4.MoveLastItem = this.toolStripButton27;
@@ -1166,12 +1169,13 @@
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(6, 41);
             // 
-            // toolStripButton28
+            // RegioListSaveButton
             // 
-            this.toolStripButton28.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton28.Image")));
-            this.toolStripButton28.Name = "toolStripButton28";
-            this.toolStripButton28.Size = new System.Drawing.Size(129, 38);
-            this.toolStripButton28.Text = "Сохранить данные";
+            this.RegioListSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("RegioListSaveButton.Image")));
+            this.RegioListSaveButton.Name = "RegioListSaveButton";
+            this.RegioListSaveButton.Size = new System.Drawing.Size(129, 38);
+            this.RegioListSaveButton.Text = "Сохранить данные";
+            this.RegioListSaveButton.Click += new System.EventHandler(this.RegioListSaveButton_Click);
             // 
             // regNameTextBox
             // 
@@ -1275,7 +1279,7 @@
             this.toolStripSeparator6,
             this.toolStripButton8,
             this.toolStripButton9,
-            this.toolStripButton14});
+            this.UserDataSaveButton});
             this.bindingNavigator2.Location = new System.Drawing.Point(1, 0);
             this.bindingNavigator2.MoveFirstItem = this.toolStripButton10;
             this.bindingNavigator2.MoveLastItem = this.toolStripButton13;
@@ -1372,12 +1376,13 @@
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 44);
             // 
-            // toolStripButton14
+            // UserDataSaveButton
             // 
-            this.toolStripButton14.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton14.Image")));
-            this.toolStripButton14.Name = "toolStripButton14";
-            this.toolStripButton14.Size = new System.Drawing.Size(129, 41);
-            this.toolStripButton14.Text = "Сохранить данные";
+            this.UserDataSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("UserDataSaveButton.Image")));
+            this.UserDataSaveButton.Name = "UserDataSaveButton";
+            this.UserDataSaveButton.Size = new System.Drawing.Size(129, 41);
+            this.UserDataSaveButton.Text = "Сохранить данные";
+            this.UserDataSaveButton.Click += new System.EventHandler(this.UserDataSaveButton_Click);
             // 
             // userDataDataGridView
             // 
@@ -1610,7 +1615,7 @@
             this.toolStripSeparator3,
             this.toolStripButton1,
             this.toolStripButton2,
-            this.toolStripButton7});
+            this.EmSaveButton});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = this.toolStripButton3;
             this.bindingNavigator1.MoveLastItem = this.toolStripButton6;
@@ -1707,13 +1712,13 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 44);
             // 
-            // toolStripButton7
+            // EmSaveButton
             // 
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(129, 41);
-            this.toolStripButton7.Text = "Сохранить данные";
-            this.toolStripButton7.Click += new System.EventHandler(this.emergenciesBindingNavigatorSaveItem_Click);
+            this.EmSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("EmSaveButton.Image")));
+            this.EmSaveButton.Name = "EmSaveButton";
+            this.EmSaveButton.Size = new System.Drawing.Size(129, 41);
+            this.EmSaveButton.Text = "Сохранить данные";
+            this.EmSaveButton.Click += new System.EventHandler(this.emergenciesBindingNavigatorSaveItem_Click);
             // 
             // emergenciesDataGridView
             // 
@@ -1783,6 +1788,11 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "StatusID";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
+            // emergenciesBindingSource2
+            // 
+            this.emergenciesBindingSource2.DataMember = "Emergencies";
+            this.emergenciesBindingSource2.DataSource = this.mCHSDataSet;
+            // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "Description", true));
@@ -1844,11 +1854,6 @@
             this.userDataTableViewBindingSource.DataSource = this.mCHSDataSet;
             this.userDataTableViewBindingSource.Position = 0;
             // 
-            // emergenciesBindingSource2
-            // 
-            this.emergenciesBindingSource2.DataMember = "Emergencies";
-            this.emergenciesBindingSource2.DataSource = this.mCHSDataSet;
-            // 
             // adminform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1906,10 +1911,10 @@
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource2)).EndInit();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDataTableViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1939,7 +1944,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton12;
         private System.Windows.Forms.ToolStripButton toolStripButton13;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton toolStripButton14;
+        private System.Windows.Forms.ToolStripButton UserDataSaveButton;
         private System.Windows.Forms.DataGridView userDataDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
@@ -1970,7 +1975,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
+        private System.Windows.Forms.ToolStripButton EmSaveButton;
         private System.Windows.Forms.DataGridView emergenciesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -2006,7 +2011,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton19;
         private System.Windows.Forms.ToolStripButton toolStripButton20;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
-        private System.Windows.Forms.ToolStripButton toolStripButton21;
+        private System.Windows.Forms.ToolStripButton PositionTableSaveButton;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -2025,7 +2030,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton26;
         private System.Windows.Forms.ToolStripButton toolStripButton27;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
-        private System.Windows.Forms.ToolStripButton toolStripButton28;
+        private System.Windows.Forms.ToolStripButton RegioListSaveButton;
         private System.Windows.Forms.TextBox regNameTextBox;
         private System.Windows.Forms.TextBox typenameTextBox;
         private System.Windows.Forms.DataGridView emergTypeListDataGridView;
@@ -2043,7 +2048,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton33;
         private System.Windows.Forms.ToolStripButton toolStripButton34;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
-        private System.Windows.Forms.ToolStripButton toolStripButton35;
+        private System.Windows.Forms.ToolStripButton EmTypeSaveButton;
         private System.Windows.Forms.BindingNavigator bindingNavigator6;
         private System.Windows.Forms.ToolStripButton toolStripButton36;
         private System.Windows.Forms.ToolStripLabel toolStripLabel6;
@@ -2056,7 +2061,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton40;
         private System.Windows.Forms.ToolStripButton toolStripButton41;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
-        private System.Windows.Forms.ToolStripButton toolStripButton42;
+        private System.Windows.Forms.ToolStripButton StatusListSaveButton;
         private System.Windows.Forms.TextBox statusnameTextBox;
         private System.Windows.Forms.DataGridView statusListDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
