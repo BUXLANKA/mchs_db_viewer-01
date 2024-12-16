@@ -97,16 +97,19 @@ namespace mchs_db_viewer_01
 
                                 if (result == 8 || result == 9 || result == 11 || result == 15 || result == 16)
                                 {
+                                    this.Hide();
                                     AdminWindow.ShowDialog();
                                     this.Close();
                                 }
                                 else if(result == 7)
                                 {
+                                    this.Hide();
                                     OperatorWindow.ShowDialog();
                                     this.Close();
                                 }
                                 else
                                 {
+                                    this.Hide();
                                     ViewerWindow.ShowDialog();
                                     this.Close();
                                 }

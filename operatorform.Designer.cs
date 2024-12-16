@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(operatorform));
             System.Windows.Forms.Label emTypeIDLabel;
             System.Windows.Forms.Label descriptionLabel;
             System.Windows.Forms.Label startDateLabel;
@@ -37,40 +36,18 @@
             System.Windows.Forms.Label regIDLabel;
             System.Windows.Forms.Label userIDLabel;
             System.Windows.Forms.Label statusIDLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(operatorform));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.mCHSDataSet = new mchs_db_viewer_01.MCHSDataSet();
-            this.emergenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.emergenciesTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergenciesTableAdapter();
-            this.tableAdapterManager = new mchs_db_viewer_01.MCHSDataSetTableAdapters.TableAdapterManager();
-            this.emergenciesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.emergenciesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.descriptionTextBox = new System.Windows.Forms.TextBox();
-            this.startDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.endDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.userIDTextBox = new System.Windows.Forms.TextBox();
-            this.emergenciesDataGridView = new System.Windows.Forms.DataGridView();
-            this.emergenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.emergenciesComboBox = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.emergTypeListBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.emergTypeListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergTypeListTableAdapter();
+            this.emergenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mCHSDataSet = new mchs_db_viewer_01.MCHSDataSet();
             this.regionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.regionsTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.RegionsTableAdapter();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.statusListBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.statusListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.StatusListTableAdapter();
+            this.emergenciesComboBox = new System.Windows.Forms.ComboBox();
+            this.emergTypeListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.emergenciesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,6 +56,29 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.startDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.endDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.userIDTextBox = new System.Windows.Forms.TextBox();
+            this.emergenciesTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergenciesTableAdapter();
+            this.tableAdapterManager = new mchs_db_viewer_01.MCHSDataSetTableAdapters.TableAdapterManager();
+            this.emergTypeListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.EmergTypeListTableAdapter();
+            this.regionsTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.RegionsTableAdapter();
+            this.statusListTableAdapter = new mchs_db_viewer_01.MCHSDataSetTableAdapters.StatusListTableAdapter();
+            this.emergenciesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.emergenciesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.emergenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             emTypeIDLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             startDateLabel = new System.Windows.Forms.Label();
@@ -88,16 +88,79 @@
             statusIDLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mCHSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingNavigator)).BeginInit();
-            this.emergenciesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.emergenciesDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mCHSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingNavigator)).BeginInit();
+            this.emergenciesBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // emTypeIDLabel
+            // 
+            emTypeIDLabel.AutoSize = true;
+            emTypeIDLabel.Location = new System.Drawing.Point(22, 35);
+            emTypeIDLabel.Name = "emTypeIDLabel";
+            emTypeIDLabel.Size = new System.Drawing.Size(47, 13);
+            emTypeIDLabel.TabIndex = 2;
+            emTypeIDLabel.Text = "Тип ЧС:";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(22, 61);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(60, 13);
+            descriptionLabel.TabIndex = 4;
+            descriptionLabel.Text = "Описание:";
+            // 
+            // startDateLabel
+            // 
+            startDateLabel.AutoSize = true;
+            startDateLabel.Location = new System.Drawing.Point(22, 88);
+            startDateLabel.Name = "startDateLabel";
+            startDateLabel.Size = new System.Drawing.Size(74, 13);
+            startDateLabel.TabIndex = 6;
+            startDateLabel.Text = "Дата начала:";
+            // 
+            // endDateLabel
+            // 
+            endDateLabel.AutoSize = true;
+            endDateLabel.Location = new System.Drawing.Point(22, 114);
+            endDateLabel.Name = "endDateLabel";
+            endDateLabel.Size = new System.Drawing.Size(92, 13);
+            endDateLabel.TabIndex = 8;
+            endDateLabel.Text = "Дата окончания:";
+            // 
+            // regIDLabel
+            // 
+            regIDLabel.AutoSize = true;
+            regIDLabel.Location = new System.Drawing.Point(22, 139);
+            regIDLabel.Name = "regIDLabel";
+            regIDLabel.Size = new System.Drawing.Size(46, 13);
+            regIDLabel.TabIndex = 10;
+            regIDLabel.Text = "Регион:";
+            // 
+            // userIDLabel
+            // 
+            userIDLabel.AutoSize = true;
+            userIDLabel.Location = new System.Drawing.Point(22, 165);
+            userIDLabel.Name = "userIDLabel";
+            userIDLabel.Size = new System.Drawing.Size(117, 13);
+            userIDLabel.TabIndex = 12;
+            userIDLabel.Text = "№Уполн. сотрудника:";
+            // 
+            // statusIDLabel
+            // 
+            statusIDLabel.AutoSize = true;
+            statusIDLabel.Location = new System.Drawing.Point(22, 191);
+            statusIDLabel.Name = "statusIDLabel";
+            statusIDLabel.Size = new System.Drawing.Size(44, 13);
+            statusIDLabel.TabIndex = 14;
+            statusIDLabel.Text = "Статус:";
             // 
             // tabControl1
             // 
@@ -134,249 +197,66 @@
             this.tabPage1.Text = "Таблица ЧС";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // mCHSDataSet
+            // comboBox2
             // 
-            this.mCHSDataSet.DataSetName = "MCHSDataSet";
-            this.mCHSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "RegID", true));
+            this.comboBox2.DataSource = this.regionsBindingSource;
+            this.comboBox2.DisplayMember = "RegName";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(148, 136);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(392, 21);
+            this.comboBox2.TabIndex = 17;
+            this.comboBox2.ValueMember = "RegID";
             // 
             // emergenciesBindingSource
             // 
             this.emergenciesBindingSource.DataMember = "Emergencies";
             this.emergenciesBindingSource.DataSource = this.mCHSDataSet;
             // 
-            // emergenciesTableAdapter
+            // mCHSDataSet
             // 
-            this.emergenciesTableAdapter.ClearBeforeFill = true;
+            this.mCHSDataSet.DataSetName = "MCHSDataSet";
+            this.mCHSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tableAdapterManager
+            // regionsBindingSource
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EmergenciesTableAdapter = this.emergenciesTableAdapter;
-            this.tableAdapterManager.EmergTypeListTableAdapter = this.emergTypeListTableAdapter;
-            this.tableAdapterManager.PositionListTableAdapter = null;
-            this.tableAdapterManager.RegionsTableAdapter = this.regionsTableAdapter;
-            this.tableAdapterManager.StatusListTableAdapter = this.statusListTableAdapter;
-            this.tableAdapterManager.UpdateOrder = mchs_db_viewer_01.MCHSDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UserDataTableAdapter = null;
+            this.regionsBindingSource.DataMember = "Regions";
+            this.regionsBindingSource.DataSource = this.mCHSDataSet;
             // 
-            // emergenciesBindingNavigator
+            // comboBox1
             // 
-            this.emergenciesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.emergenciesBindingNavigator.BindingSource = this.emergenciesBindingSource;
-            this.emergenciesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.emergenciesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.emergenciesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.emergenciesBindingNavigatorSaveItem});
-            this.emergenciesBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.emergenciesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.emergenciesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.emergenciesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.emergenciesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.emergenciesBindingNavigator.Name = "emergenciesBindingNavigator";
-            this.emergenciesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.emergenciesBindingNavigator.Size = new System.Drawing.Size(1100, 25);
-            this.emergenciesBindingNavigator.TabIndex = 1;
-            this.emergenciesBindingNavigator.Text = "bindingNavigator1";
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "StatusID", true));
+            this.comboBox1.DataSource = this.statusListBindingSource;
+            this.comboBox1.DisplayMember = "Statusname";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(148, 188);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(392, 21);
+            this.comboBox1.TabIndex = 16;
+            this.comboBox1.ValueMember = "StatusID";
             // 
-            // bindingNavigatorMoveFirstItem
+            // statusListBindingSource
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
+            this.statusListBindingSource.DataMember = "StatusList";
+            this.statusListBindingSource.DataSource = this.mCHSDataSet;
             // 
-            // bindingNavigatorMovePreviousItem
+            // emergenciesComboBox
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
+            this.emergenciesComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "EmTypeID", true));
+            this.emergenciesComboBox.DataSource = this.emergTypeListBindingSource;
+            this.emergenciesComboBox.DisplayMember = "Typename";
+            this.emergenciesComboBox.FormattingEnabled = true;
+            this.emergenciesComboBox.Location = new System.Drawing.Point(148, 31);
+            this.emergenciesComboBox.Name = "emergenciesComboBox";
+            this.emergenciesComboBox.Size = new System.Drawing.Size(392, 21);
+            this.emergenciesComboBox.TabIndex = 15;
+            this.emergenciesComboBox.ValueMember = "EmTypeID";
             // 
-            // bindingNavigatorSeparator
+            // emergTypeListBindingSource
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(158, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить новую запись";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(71, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // emergenciesBindingNavigatorSaveItem
-            // 
-            this.emergenciesBindingNavigatorSaveItem.CheckOnClick = true;
-            this.emergenciesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("emergenciesBindingNavigatorSaveItem.Image")));
-            this.emergenciesBindingNavigatorSaveItem.Name = "emergenciesBindingNavigatorSaveItem";
-            this.emergenciesBindingNavigatorSaveItem.Size = new System.Drawing.Size(129, 22);
-            this.emergenciesBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.emergenciesBindingNavigatorSaveItem.Click += new System.EventHandler(this.emergenciesBindingNavigatorSaveItem_Click);
-            // 
-            // emTypeIDLabel
-            // 
-            emTypeIDLabel.AutoSize = true;
-            emTypeIDLabel.Location = new System.Drawing.Point(22, 35);
-            emTypeIDLabel.Name = "emTypeIDLabel";
-            emTypeIDLabel.Size = new System.Drawing.Size(47, 13);
-            emTypeIDLabel.TabIndex = 2;
-            emTypeIDLabel.Text = "Тип ЧС:";
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(22, 61);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(60, 13);
-            descriptionLabel.TabIndex = 4;
-            descriptionLabel.Text = "Описание:";
-            // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(148, 58);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(392, 20);
-            this.descriptionTextBox.TabIndex = 5;
-            // 
-            // startDateLabel
-            // 
-            startDateLabel.AutoSize = true;
-            startDateLabel.Location = new System.Drawing.Point(22, 88);
-            startDateLabel.Name = "startDateLabel";
-            startDateLabel.Size = new System.Drawing.Size(74, 13);
-            startDateLabel.TabIndex = 6;
-            startDateLabel.Text = "Дата начала:";
-            // 
-            // startDateDateTimePicker
-            // 
-            this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "StartDate", true));
-            this.startDateDateTimePicker.Location = new System.Drawing.Point(148, 84);
-            this.startDateDateTimePicker.Name = "startDateDateTimePicker";
-            this.startDateDateTimePicker.Size = new System.Drawing.Size(392, 20);
-            this.startDateDateTimePicker.TabIndex = 7;
-            // 
-            // endDateLabel
-            // 
-            endDateLabel.AutoSize = true;
-            endDateLabel.Location = new System.Drawing.Point(22, 114);
-            endDateLabel.Name = "endDateLabel";
-            endDateLabel.Size = new System.Drawing.Size(92, 13);
-            endDateLabel.TabIndex = 8;
-            endDateLabel.Text = "Дата окончания:";
-            // 
-            // endDateDateTimePicker
-            // 
-            this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "EndDate", true));
-            this.endDateDateTimePicker.Location = new System.Drawing.Point(148, 110);
-            this.endDateDateTimePicker.Name = "endDateDateTimePicker";
-            this.endDateDateTimePicker.Size = new System.Drawing.Size(392, 20);
-            this.endDateDateTimePicker.TabIndex = 9;
-            // 
-            // regIDLabel
-            // 
-            regIDLabel.AutoSize = true;
-            regIDLabel.Location = new System.Drawing.Point(22, 139);
-            regIDLabel.Name = "regIDLabel";
-            regIDLabel.Size = new System.Drawing.Size(46, 13);
-            regIDLabel.TabIndex = 10;
-            regIDLabel.Text = "Регион:";
-            // 
-            // userIDLabel
-            // 
-            userIDLabel.AutoSize = true;
-            userIDLabel.Location = new System.Drawing.Point(22, 165);
-            userIDLabel.Name = "userIDLabel";
-            userIDLabel.Size = new System.Drawing.Size(117, 13);
-            userIDLabel.TabIndex = 12;
-            userIDLabel.Text = "№Уполн. сотрудника:";
-            // 
-            // userIDTextBox
-            // 
-            this.userIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "UserID", true));
-            this.userIDTextBox.Location = new System.Drawing.Point(148, 162);
-            this.userIDTextBox.Name = "userIDTextBox";
-            this.userIDTextBox.Size = new System.Drawing.Size(392, 20);
-            this.userIDTextBox.TabIndex = 13;
-            // 
-            // statusIDLabel
-            // 
-            statusIDLabel.AutoSize = true;
-            statusIDLabel.Location = new System.Drawing.Point(22, 191);
-            statusIDLabel.Name = "statusIDLabel";
-            statusIDLabel.Size = new System.Drawing.Size(44, 13);
-            statusIDLabel.TabIndex = 14;
-            statusIDLabel.Text = "Статус:";
+            this.emergTypeListBindingSource.DataMember = "EmergTypeList";
+            this.emergTypeListBindingSource.DataSource = this.mCHSDataSet;
             // 
             // emergenciesDataGridView
             // 
@@ -397,74 +277,6 @@
             this.emergenciesDataGridView.ReadOnly = true;
             this.emergenciesDataGridView.Size = new System.Drawing.Size(1056, 387);
             this.emergenciesDataGridView.TabIndex = 15;
-            // 
-            // emergenciesBindingSource1
-            // 
-            this.emergenciesBindingSource1.DataMember = "Emergencies";
-            this.emergenciesBindingSource1.DataSource = this.mCHSDataSet;
-            // 
-            // emergenciesComboBox
-            // 
-            this.emergenciesComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "EmTypeID", true));
-            this.emergenciesComboBox.DataSource = this.emergTypeListBindingSource;
-            this.emergenciesComboBox.DisplayMember = "Typename";
-            this.emergenciesComboBox.FormattingEnabled = true;
-            this.emergenciesComboBox.Location = new System.Drawing.Point(148, 31);
-            this.emergenciesComboBox.Name = "emergenciesComboBox";
-            this.emergenciesComboBox.Size = new System.Drawing.Size(392, 21);
-            this.emergenciesComboBox.TabIndex = 15;
-            this.emergenciesComboBox.ValueMember = "EmTypeID";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "StatusID", true));
-            this.comboBox1.DataSource = this.statusListBindingSource;
-            this.comboBox1.DisplayMember = "Statusname";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(148, 188);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(392, 21);
-            this.comboBox1.TabIndex = 16;
-            this.comboBox1.ValueMember = "StatusID";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.emergenciesBindingSource, "RegID", true));
-            this.comboBox2.DataSource = this.regionsBindingSource;
-            this.comboBox2.DisplayMember = "RegName";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(148, 136);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(392, 21);
-            this.comboBox2.TabIndex = 17;
-            this.comboBox2.ValueMember = "RegID";
-            // 
-            // emergTypeListBindingSource
-            // 
-            this.emergTypeListBindingSource.DataMember = "EmergTypeList";
-            this.emergTypeListBindingSource.DataSource = this.mCHSDataSet;
-            // 
-            // emergTypeListTableAdapter
-            // 
-            this.emergTypeListTableAdapter.ClearBeforeFill = true;
-            // 
-            // regionsBindingSource
-            // 
-            this.regionsBindingSource.DataMember = "Regions";
-            this.regionsBindingSource.DataSource = this.mCHSDataSet;
-            // 
-            // regionsTableAdapter
-            // 
-            this.regionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // statusListBindingSource
-            // 
-            this.statusListBindingSource.DataMember = "StatusList";
-            this.statusListBindingSource.DataSource = this.mCHSDataSet;
-            // 
-            // statusListTableAdapter
-            // 
-            this.statusListTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -522,6 +334,194 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
+            // descriptionTextBox
+            // 
+            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "Description", true));
+            this.descriptionTextBox.Location = new System.Drawing.Point(148, 58);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(392, 20);
+            this.descriptionTextBox.TabIndex = 5;
+            // 
+            // startDateDateTimePicker
+            // 
+            this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "StartDate", true));
+            this.startDateDateTimePicker.Location = new System.Drawing.Point(148, 84);
+            this.startDateDateTimePicker.Name = "startDateDateTimePicker";
+            this.startDateDateTimePicker.Size = new System.Drawing.Size(392, 20);
+            this.startDateDateTimePicker.TabIndex = 7;
+            // 
+            // endDateDateTimePicker
+            // 
+            this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.emergenciesBindingSource, "EndDate", true));
+            this.endDateDateTimePicker.Location = new System.Drawing.Point(148, 110);
+            this.endDateDateTimePicker.Name = "endDateDateTimePicker";
+            this.endDateDateTimePicker.Size = new System.Drawing.Size(392, 20);
+            this.endDateDateTimePicker.TabIndex = 9;
+            // 
+            // userIDTextBox
+            // 
+            this.userIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.emergenciesBindingSource, "UserID", true));
+            this.userIDTextBox.Location = new System.Drawing.Point(148, 162);
+            this.userIDTextBox.Name = "userIDTextBox";
+            this.userIDTextBox.Size = new System.Drawing.Size(392, 20);
+            this.userIDTextBox.TabIndex = 13;
+            // 
+            // emergenciesTableAdapter
+            // 
+            this.emergenciesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EmergenciesTableAdapter = this.emergenciesTableAdapter;
+            this.tableAdapterManager.EmergTypeListTableAdapter = this.emergTypeListTableAdapter;
+            this.tableAdapterManager.PositionListTableAdapter = null;
+            this.tableAdapterManager.RegionsTableAdapter = this.regionsTableAdapter;
+            this.tableAdapterManager.StatusListTableAdapter = this.statusListTableAdapter;
+            this.tableAdapterManager.UpdateOrder = mchs_db_viewer_01.MCHSDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UserDataTableAdapter = null;
+            // 
+            // emergTypeListTableAdapter
+            // 
+            this.emergTypeListTableAdapter.ClearBeforeFill = true;
+            // 
+            // regionsTableAdapter
+            // 
+            this.regionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // statusListTableAdapter
+            // 
+            this.statusListTableAdapter.ClearBeforeFill = true;
+            // 
+            // emergenciesBindingNavigator
+            // 
+            this.emergenciesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.emergenciesBindingNavigator.BindingSource = this.emergenciesBindingSource;
+            this.emergenciesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.emergenciesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.emergenciesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.emergenciesBindingNavigatorSaveItem});
+            this.emergenciesBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.emergenciesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.emergenciesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.emergenciesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.emergenciesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.emergenciesBindingNavigator.Name = "emergenciesBindingNavigator";
+            this.emergenciesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.emergenciesBindingNavigator.Size = new System.Drawing.Size(1100, 25);
+            this.emergenciesBindingNavigator.TabIndex = 1;
+            this.emergenciesBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(158, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить новую запись";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(71, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // emergenciesBindingNavigatorSaveItem
+            // 
+            this.emergenciesBindingNavigatorSaveItem.CheckOnClick = true;
+            this.emergenciesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("emergenciesBindingNavigatorSaveItem.Image")));
+            this.emergenciesBindingNavigatorSaveItem.Name = "emergenciesBindingNavigatorSaveItem";
+            this.emergenciesBindingNavigatorSaveItem.Size = new System.Drawing.Size(129, 22);
+            this.emergenciesBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.emergenciesBindingNavigatorSaveItem.Click += new System.EventHandler(this.emergenciesBindingNavigatorSaveItem_Click);
+            // 
+            // emergenciesBindingSource1
+            // 
+            this.emergenciesBindingSource1.DataMember = "Emergencies";
+            this.emergenciesBindingSource1.DataSource = this.mCHSDataSet;
+            // 
             // operatorform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,22 +529,23 @@
             this.ClientSize = new System.Drawing.Size(1100, 692);
             this.Controls.Add(this.emergenciesBindingNavigator);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "operatorform";
             this.Text = "adminform";
             this.Load += new System.EventHandler(this.operatorform_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mCHSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mCHSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusListBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emergenciesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingNavigator)).EndInit();
             this.emergenciesBindingNavigator.ResumeLayout(false);
             this.emergenciesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.emergenciesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emergenciesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emergTypeListBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.regionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusListBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
