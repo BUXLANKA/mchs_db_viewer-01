@@ -65,18 +65,6 @@ namespace mchs_db_viewer_01
             this.statusListTableAdapter.Update(this.mCHSDataSet.StatusList);
             this.tableAdapterManager.UpdateAll(this.mCHSDataSet);
             this.statusListTableAdapter.Fill(this.mCHSDataSet.StatusList);
-        }
-
-
-        //private void UserDataBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        //{
-        //    this.Validate();
-        //    //this.userDataBindingSource.EndEdit();
-        //    ////this.tableAdapterManager.Update(this.mCHSDataSet);
-        //    //this.userDataTableAdapter.Update(this.mCHSDataSet.UserData);
-        //    //this.tableAdapterManager.UpdateAll(this.mCHSDataSet);
-        //}
-
-        
+        }  
     }
 }
