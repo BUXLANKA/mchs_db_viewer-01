@@ -52,6 +52,7 @@
     <Compile Include="adminform.Designer.cs">
       <DependentUpon>adminform.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContol\DataController.cs" />
     <Compile Include="loginform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,13 +64,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MCHSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="operatorform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="operatorform.Designer.cs">
+      <DependentUpon>operatorform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="viewerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewerform.Designer.cs">
+      <DependentUpon>viewerform.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="adminform.resx">
       <DependentUpon>adminform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginform.resx">
       <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operatorform.resx">
+      <DependentUpon>operatorform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="viewerform.resx">
+      <DependentUpon>viewerform.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="MCHSDataSet.xsc">
       <DependentUpon>MCHSDataSet.xsd</DependentUpon>
     </None>
