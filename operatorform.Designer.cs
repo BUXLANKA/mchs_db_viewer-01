@@ -520,7 +520,7 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "operatorform";
-            this.Text = "adminform";
+            this.Text = "operator";
             this.Load += new System.EventHandler(this.operatorform_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
